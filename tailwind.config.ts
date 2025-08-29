@@ -62,9 +62,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'cyber-blue': 'hsl(var(--cyber-blue))',
-				'cyber-green': 'hsl(var(--cyber-green))',
-				'cyber-purple': 'hsl(var(--cyber-purple))'
+				'professional-blue': 'hsl(var(--professional-blue))',
+				'professional-gold': 'hsl(var(--professional-gold))',
+				'professional-slate': 'hsl(var(--professional-slate))',
+				'tech-accent': 'hsl(var(--tech-accent))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -90,10 +91,10 @@ export default {
 				},
 				'pulse-glow': {
 					'0%': {
-						boxShadow: '0 0 20px hsl(var(--cyber-blue) / 0.3)'
+						boxShadow: '0 0 20px hsl(var(--professional-blue) / 0.2)'
 					},
 					'100%': {
-						boxShadow: '0 0 40px hsl(var(--cyber-blue) / 0.6)'
+						boxShadow: '0 0 30px hsl(var(--professional-blue) / 0.4)'
 					}
 				},
 				'float': {
@@ -112,13 +113,13 @@ export default {
 				'float': 'float 3s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'gradient-cyber': 'var(--gradient-cyber)',
-				'gradient-tech': 'var(--gradient-tech)',
+				'gradient-professional': 'var(--gradient-professional)',
+				'gradient-subtle': 'var(--gradient-subtle)',
 				'gradient-card': 'var(--gradient-card)'
 			},
 			boxShadow: {
-				'cyber': 'var(--shadow-cyber)',
-				'glow': 'var(--shadow-glow)',
+				'professional': 'var(--shadow-professional)',
+				'elegant': 'var(--shadow-elegant)',
 				'card': 'var(--shadow-card)'
 			}
 		}

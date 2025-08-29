@@ -16,7 +16,7 @@ const Experience = () => {
         "Resolved issues in Windows Server and Active Directory environments"
       ],
       tools: ["Windows Server", "Splunk", "Wireshark", "HP AI for Business"],
-      color: "cyber-blue"
+      color: "professional-blue"
     },
     {
       title: "Freelance Cybersecurity Projects",
@@ -30,23 +30,23 @@ const Experience = () => {
         "Set up pfSense firewall and improved endpoint security for a local startup"
       ],
       tools: ["Kali Linux", "Ubuntu", "Snort", "Burp Suite", "Metasploitable2"],
-      color: "cyber-green"
+      color: "tech-accent"
     }
   ];
 
   const getColorClass = (color: string) => {
     switch(color) {
-      case "cyber-blue": return "text-cyber-blue border-cyber-blue/20 bg-cyber-blue/5";
-      case "cyber-green": return "text-cyber-green border-cyber-green/20 bg-cyber-green/5";
-      default: return "text-cyber-blue border-cyber-blue/20 bg-cyber-blue/5";
+      case "professional-blue": return "text-professional-blue border-professional-blue/20 bg-professional-blue/5";
+      case "tech-accent": return "text-tech-accent border-tech-accent/20 bg-tech-accent/5";
+      default: return "text-professional-blue border-professional-blue/20 bg-professional-blue/5";
     }
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-tech">
+    <section id="experience" className="py-20 px-4 bg-gradient-subtle">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold bg-gradient-cyber bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl font-bold bg-gradient-professional bg-clip-text text-transparent mb-4">
             Work Experience
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -76,15 +76,15 @@ const Experience = () => {
                   
                   <div className="flex flex-col sm:flex-row gap-4 mb-6 text-muted-foreground">
                     <div className="flex items-center gap-2">
-                      <ExternalLink className="w-4 h-4 text-cyber-blue" />
-                      <span className="font-semibold text-cyber-blue">{exp.company}</span>
+                      <ExternalLink className="w-4 h-4 text-professional-blue" />
+                      <span className="font-semibold text-professional-blue">{exp.company}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-cyber-green" />
+                      <MapPin className="w-4 h-4 text-tech-accent" />
                       <span>{exp.location}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4 text-cyber-purple" />
+                      <Calendar className="w-4 h-4 text-professional-gold" />
                       <span>{exp.period}</span>
                     </div>
                   </div>
@@ -92,7 +92,7 @@ const Experience = () => {
                   <ul className="space-y-2 mb-6">
                     {exp.responsibilities.map((resp, respIndex) => (
                       <li key={respIndex} className="flex items-start gap-3 text-foreground">
-                        <div className="w-2 h-2 bg-cyber-blue rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-professional-blue rounded-full mt-2 flex-shrink-0"></div>
                         <span>{resp}</span>
                       </li>
                     ))}
@@ -105,7 +105,7 @@ const Experience = () => {
                         <Badge 
                           key={toolIndex} 
                           variant="outline" 
-                          className="border-cyber-blue/30 text-cyber-blue hover:bg-cyber-blue/10"
+                          className="border-professional-blue/30 text-professional-blue hover:bg-professional-blue/10"
                         >
                           {tool}
                         </Badge>

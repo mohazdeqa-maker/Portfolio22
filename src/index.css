@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 13% 9%;
-    --foreground: 210 40% 98%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --card: 220 13% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 220 13% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 220 13% 9%;
+    --primary: 210 100% 56%;
+    --primary-foreground: 240 10% 3.9%;
 
-    --secondary: 220 13% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 240 5% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 64.9%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 47 96% 53%;
+    --accent-foreground: 240 10% 3.9%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 20%;
-    --input: 220 13% 15%;
-    --ring: 217 91% 60%;
+    --border: 240 6% 20%;
+    --input: 240 6% 20%;
+    --ring: 210 100% 56%;
 
-    --cyber-blue: 217 91% 60%;
-    --cyber-green: 142 76% 36%;
-    --cyber-purple: 271 91% 65%;
-    --tech-glow: 217 91% 60%;
+    --professional-blue: 210 100% 56%;
+    --professional-gold: 47 96% 53%;
+    --professional-slate: 215 28% 17%;
+    --tech-accent: 142 71% 45%;
     
-    --gradient-cyber: linear-gradient(135deg, hsl(var(--cyber-blue)), hsl(var(--cyber-purple)));
-    --gradient-tech: linear-gradient(90deg, hsl(var(--cyber-blue) / 0.1), hsl(var(--cyber-green) / 0.1));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 13% 10%));
+    --gradient-professional: linear-gradient(135deg, hsl(var(--professional-blue)), hsl(var(--professional-gold)));
+    --gradient-subtle: linear-gradient(90deg, hsl(var(--professional-blue) / 0.05), hsl(var(--professional-gold) / 0.05));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(240 10% 6%));
     
-    --shadow-cyber: 0 0 30px hsl(var(--cyber-blue) / 0.3);
-    --shadow-glow: 0 4px 20px hsl(var(--tech-glow) / 0.2);
-    --shadow-card: 0 8px 32px hsl(220 13% 5% / 0.4);
+    --shadow-professional: 0 0 25px hsl(var(--professional-blue) / 0.2);
+    --shadow-elegant: 0 4px 16px hsl(210 100% 56% / 0.15);
+    --shadow-card: 0 8px 25px hsl(240 10% 3% / 0.5);
 
     --radius: 0.5rem;
 

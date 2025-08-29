@@ -14,12 +14,12 @@ const Education = () => {
     {
       name: "Cybersecurity Fundamentals",
       year: "2024",
-      color: "cyber-blue"
+      color: "professional-blue"
     },
     {
       name: "HP AI for Business Professionals",
       year: "2024–2025",
-      color: "cyber-green"
+      color: "tech-accent"
     }
   ];
 
@@ -32,17 +32,17 @@ const Education = () => {
 
   const getColorClass = (color: string) => {
     switch(color) {
-      case "cyber-blue": return "text-cyber-blue border-cyber-blue/20 bg-cyber-blue/5";
-      case "cyber-green": return "text-cyber-green border-cyber-green/20 bg-cyber-green/5";
-      default: return "text-cyber-blue border-cyber-blue/20 bg-cyber-blue/5";
+      case "professional-blue": return "text-professional-blue border-professional-blue/20 bg-professional-blue/5";
+      case "tech-accent": return "text-tech-accent border-tech-accent/20 bg-tech-accent/5";
+      default: return "text-professional-blue border-professional-blue/20 bg-professional-blue/5";
     }
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-tech">
+    <section id="education" className="py-20 px-4 bg-gradient-subtle">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold bg-gradient-cyber bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl font-bold bg-gradient-professional bg-clip-text text-transparent mb-4">
             Education & Certifications
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -54,15 +54,15 @@ const Education = () => {
           {/* Education */}
           <Card className="p-8 bg-gradient-card shadow-card border-border/50 hover:shadow-glow transition-all duration-300">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-3 rounded-lg bg-cyber-blue/10 border border-cyber-blue/20">
-                <GraduationCap className="w-6 h-6 text-cyber-blue" />
+              <div className="p-3 rounded-lg bg-professional-blue/10 border border-professional-blue/20">
+                <GraduationCap className="w-6 h-6 text-professional-blue" />
               </div>
               <h3 className="text-2xl font-bold text-foreground">Education</h3>
             </div>
             
             <div className="space-y-4">
               <div>
-                <h4 className="text-xl font-semibold text-cyber-blue mb-2">
+                <h4 className="text-xl font-semibold text-professional-blue mb-2">
                   {education.degree}
                 </h4>
                 <p className="text-lg text-foreground font-medium mb-1">
@@ -79,8 +79,8 @@ const Education = () => {
           {/* Certifications */}
           <Card className="p-8 bg-gradient-card shadow-card border-border/50 hover:shadow-glow transition-all duration-300">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-3 rounded-lg bg-cyber-green/10 border border-cyber-green/20">
-                <Award className="w-6 h-6 text-cyber-green" />
+              <div className="p-3 rounded-lg bg-tech-accent/10 border border-tech-accent/20">
+                <Award className="w-6 h-6 text-tech-accent" />
               </div>
               <h3 className="text-2xl font-bold text-foreground">Certifications</h3>
             </div>
@@ -117,7 +117,7 @@ const Education = () => {
               {languages.map((lang, index) => (
                 <div key={index} className="flex justify-between items-center">
                   <span className="text-foreground font-medium">{lang.name}</span>
-                  <Badge variant="secondary" className="bg-cyber-purple/10 text-cyber-purple border-cyber-purple/20">
+                  <Badge variant="secondary" className="bg-professional-gold/10 text-professional-gold border-professional-gold/20">
                     {lang.level}
                   </Badge>
                 </div>
@@ -133,7 +133,7 @@ const Education = () => {
                 <Badge 
                   key={index} 
                   variant="outline" 
-                  className="border-border/50 text-muted-foreground hover:border-cyber-blue/50 hover:text-cyber-blue transition-colors"
+                  className="border-border/50 text-muted-foreground hover:border-professional-blue/50 hover:text-professional-blue transition-colors"
                 >
                   {hobby}
                 </Badge>

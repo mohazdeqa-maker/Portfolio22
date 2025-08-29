@@ -19,54 +19,54 @@ const Skills = () => {
       title: "Network Security & Administration",
       icon: <Network className="w-6 h-6" />,
       skills: ["Network Security", "Firewall Configuration", "IDS/IPS Setup", "Network Segmentation"],
-      color: "cyber-blue"
+      color: "professional-blue"
     },
     {
       title: "Threat Detection & Response",
       icon: <Shield className="w-6 h-6" />,
       skills: ["Splunk", "Snort", "Wazuh", "SIEM Monitoring", "Incident Response"],
-      color: "cyber-green"
+      color: "tech-accent"
     },
     {
       title: "Vulnerability Assessment",
       icon: <Search className="w-6 h-6" />,
       skills: ["Nmap", "Burp Suite", "OpenVAS", "Penetration Testing", "Risk Assessment"],
-      color: "cyber-purple"
+      color: "professional-gold"
     },
     {
       title: "Analysis & Monitoring",
       icon: <Eye className="w-6 h-6" />,
       skills: ["Wireshark", "Log Analysis", "Traffic Analysis", "Packet Inspection"],
-      color: "cyber-blue"
+      color: "professional-blue"
     },
     {
       title: "System Administration",
       icon: <Server className="w-6 h-6" />,
       skills: ["Windows Server", "Linux/Ubuntu", "Active Directory", "Endpoint Security"],
-      color: "cyber-green"
+      color: "tech-accent"
     },
     {
       title: "Development & Scripting",
       icon: <Terminal className="w-6 h-6" />,
       skills: ["Python", "Bash Scripting", "Automation", "Kali Linux", "Metasploitable2"],
-      color: "cyber-purple"
+      color: "professional-gold"
     }
   ];
 
   const getColorClass = (color: string) => {
     switch(color) {
-      case "cyber-blue": return "text-cyber-blue border-cyber-blue/20 bg-cyber-blue/5";
-      case "cyber-green": return "text-cyber-green border-cyber-green/20 bg-cyber-green/5";
-      case "cyber-purple": return "text-cyber-purple border-cyber-purple/20 bg-cyber-purple/5";
-      default: return "text-cyber-blue border-cyber-blue/20 bg-cyber-blue/5";
+      case "professional-blue": return "text-professional-blue border-professional-blue/20 bg-professional-blue/5";
+      case "tech-accent": return "text-tech-accent border-tech-accent/20 bg-tech-accent/5";
+      case "professional-gold": return "text-professional-gold border-professional-gold/20 bg-professional-gold/5";
+      default: return "text-professional-blue border-professional-blue/20 bg-professional-blue/5";
     }
   };
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section id="skills" className="py-20 px-4 bg-background">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold bg-gradient-cyber bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl font-bold bg-gradient-professional bg-clip-text text-transparent mb-4">
             Core Skills
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -84,7 +84,7 @@ const Skills = () => {
                 <div className={`p-2 rounded-lg ${getColorClass(category.color)}`}>
                   {category.icon}
                 </div>
-                <h3 className="font-semibold text-foreground group-hover:text-cyber-blue transition-colors">
+                <h3 className="font-semibold text-foreground group-hover:text-professional-blue transition-colors">
                   {category.title}
                 </h3>
               </div>
